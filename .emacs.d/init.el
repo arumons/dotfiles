@@ -15,6 +15,8 @@
 (global-auto-complete-mode t)
 (setq ac-auto-start 1)
 
+(define-key ac-mode-map (kbd "C-n") 'auto-complete)
+(define-key ac-mode-map (kbd "C-p") 'auto-complete)
 (define-key ac-completing-map (kbd "C-n") 'ac-next)
 (define-key ac-completing-map (kbd "C-p") 'ac-previous)
 
