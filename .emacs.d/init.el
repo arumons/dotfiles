@@ -3,6 +3,11 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
+;;; *.~ とかのバックアップファイルを作らない
+(setq make-backup-files nil)
+;;; .#* とかのバックアップファイルを作らない
+(setq auto-save-default nil)
+
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (global-set-key (kbd "TAB") 'indent-region)
