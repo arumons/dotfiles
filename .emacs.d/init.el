@@ -5,6 +5,7 @@
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
+(global-set-key (kbd "TAB") 'indent-region)
 
 (require 'evil)
 (evil-mode 1)
