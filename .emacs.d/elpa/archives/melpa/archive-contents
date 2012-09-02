@@ -626,7 +626,7 @@
 		[(20120505 1234)
 		 nil "outline mode extensions for Emacs [source: wiki]" single])
  (org2blog .
-	   [(20120828 103)
+	   [(20120902 1115)
 	    ((org
 	      (7 7))
 	     (xml-rpc
@@ -1249,7 +1249,7 @@
 	[(20120118 1537)
 	 nil "running leiningen commands from emacs [source: github]" single])
  (ein .
-      [(20120831 1721)
+      [(20120902 659)
        ((websocket
 	 (0 9)))
        "Emacs IPython Notebook [source: github]" tar])
