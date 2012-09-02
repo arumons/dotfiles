@@ -6,9 +6,14 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 
-(add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
 (evil-mode 1)
+(define-key evil-insert-state-map "\C-n" nil)
+(define-key evil-insert-state-map "\C-p" nil)
+(define-key minibuffer-local-map "\C-p" nil)
+(define-key minibuffer-local-map "\C-n" nil)
+(define-key evil-ex-completion-map "\C-p" nil)
+(define-key evil-ex-completion-map "\C-n" nil)
 
 (require 'auto-complete)
 (require 'auto-complete-config) 
