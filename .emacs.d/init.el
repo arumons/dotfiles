@@ -14,7 +14,10 @@
 (require 'auto-complete-config) 
 (global-auto-complete-mode t)
 
+(define-key ac-completing-map (kbd "C-n") 'ac-next)
+(define-key ac-completing-map (kbd "C-p") 'ac-previous)
+
 (global-set-key (kbd "C-c h") 'helm-mini)
 (global-set-key (kbd "C-c f") 'helm-find-files)
-(global-set-key (kbd "C-c e") 'execute-extend-command)
+(global-set-key (kbd "C-c e") 'execute-extended-command)
 
